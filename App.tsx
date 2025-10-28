@@ -9,6 +9,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Home as HomeIcon, Clock, MapPin, User } from 'lucide-react-native';
 import HomeScreen from './screens/home';
 import ListAPScreen from './screens/listAP';
+import DetailPatrolScreen from './screens/detailPatrol';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -18,6 +19,7 @@ function HomeStack() {
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       <Stack.Screen name="HomeMain" component={HomeScreen} />
       <Stack.Screen name="ListAP" component={ListAPScreen} />
+      <Stack.Screen name="DetailPatrol" component={DetailPatrolScreen} />
     </Stack.Navigator>
   );
 }
